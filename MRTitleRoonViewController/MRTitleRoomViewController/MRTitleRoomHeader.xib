@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MRTitleRoomHeaderOwner">
+            <connections>
+                <outlet property="titleRoomHeader" destination="cvu-Gx-kD8" id="pY2-HX-W3L"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvu-Gx-kD8" customClass="MRTitleRoomHeader">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgTopbackground" translatesAutoresizingMaskIntoConstraints="NO" id="vCA-Zu-gmc">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ix4-IK-C6c">
+                            <rect key="frame" x="0.0" y="576" width="375" height="91"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="91" id="F7A-ff-tYM"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgTopSemicircle" translatesAutoresizingMaskIntoConstraints="NO" id="jPB-bK-S3R">
+                            <rect key="frame" x="0.0" y="606.5" width="375" height="60.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60.5" id="WCP-6C-tjP"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="c7p-SS-U1P">
+                            <rect key="frame" x="149" y="586" width="76" height="76"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="c7p-SS-U1P" secondAttribute="height" multiplier="1:1" id="BF5-lR-1NM"/>
+                                <constraint firstAttribute="height" constant="76" id="mgu-fB-cFq"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="jPB-bK-S3R" secondAttribute="bottom" id="8V2-xY-loI"/>
+                        <constraint firstAttribute="trailing" secondItem="vCA-Zu-gmc" secondAttribute="trailing" id="C6O-ZZ-8oT"/>
+                        <constraint firstAttribute="trailing" secondItem="ix4-IK-C6c" secondAttribute="trailing" id="Hbb-CI-uzJ"/>
+                        <constraint firstAttribute="bottom" secondItem="ix4-IK-C6c" secondAttribute="bottom" id="Kbi-au-b9T"/>
+                        <constraint firstAttribute="trailing" secondItem="jPB-bK-S3R" secondAttribute="trailing" id="Ns4-YQ-XmS"/>
+                        <constraint firstAttribute="bottom" secondItem="c7p-SS-U1P" secondAttribute="bottom" constant="5" id="TVD-UF-YQp"/>
+                        <constraint firstItem="c7p-SS-U1P" firstAttribute="centerX" secondItem="cvu-Gx-kD8" secondAttribute="centerX" id="Wdi-5V-PJE"/>
+                        <constraint firstItem="ix4-IK-C6c" firstAttribute="leading" secondItem="cvu-Gx-kD8" secondAttribute="leading" id="e96-O1-Wl7"/>
+                        <constraint firstItem="vCA-Zu-gmc" firstAttribute="top" secondItem="cvu-Gx-kD8" secondAttribute="top" id="hPM-Zs-dfZ"/>
+                        <constraint firstAttribute="bottom" secondItem="vCA-Zu-gmc" secondAttribute="bottom" id="hez-J1-d23"/>
+                        <constraint firstItem="jPB-bK-S3R" firstAttribute="leading" secondItem="cvu-Gx-kD8" secondAttribute="leading" id="td5-Kg-4mQ"/>
+                        <constraint firstItem="vCA-Zu-gmc" firstAttribute="leading" secondItem="cvu-Gx-kD8" secondAttribute="leading" id="x1f-DW-1MH"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="TVD-UF-YQp" id="LNx-tA-gQu"/>
+                        <outlet property="heightConstraint" destination="mgu-fB-cFq" id="uSI-2o-D29"/>
+                        <outlet property="imageView" destination="vCA-Zu-gmc" id="uDX-eH-gjH"/>
+                        <outlet property="profileImageView" destination="c7p-SS-U1P" id="E2q-VK-TDd"/>
+                        <outlet property="waveCoverView" destination="jPB-bK-S3R" id="5eO-d4-9Fj"/>
+                        <outlet property="waveView" destination="ix4-IK-C6c" id="q6n-1t-Nw5"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cvu-Gx-kD8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6Ru-aW-9zg"/>
+                <constraint firstItem="cvu-Gx-kD8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NAe-ux-HDH"/>
+                <constraint firstAttribute="bottom" secondItem="cvu-Gx-kD8" secondAttribute="bottom" id="XgE-hW-eOq"/>
+                <constraint firstAttribute="trailing" secondItem="cvu-Gx-kD8" secondAttribute="trailing" id="qFO-eA-LlB"/>
+            </constraints>
+            <point key="canvasLocation" x="75.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bgTopSemicircle" width="375" height="81"/>
+        <image name="bgTopbackground" width="375" height="225"/>
+        <image name="profile" width="225" height="225"/>
+    </resources>
+</document>
