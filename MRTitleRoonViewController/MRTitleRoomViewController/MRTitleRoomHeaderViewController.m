@@ -12,6 +12,7 @@
 #import "MRTitleRoomHeader.h"
 #import "MRSegmentView.h"
 #include "constants.h"
+#import "UIView+Orientation.h"
 
 void *RoomHeaderInsetObserver = &RoomHeaderInsetObserver;
 
@@ -28,8 +29,14 @@ void *RoomHeaderInsetObserver = &RoomHeaderInsetObserver;
     MRTitleRoomCollectionViewController *collectionView = [[MRTitleRoomCollectionViewController alloc] initWithNibName:NSStringFromClass([MRTitleRoomCollectionViewController class]) bundle:nil];
     self = [super initWithControllers:collectionView, nil];
     if (self) {
-        self.segmentMiniTopInset = kNavigationHeight;
-        self.headerHeight = kHeaderHeight;
+//        if ([self.view isViewOrientationLandscape]) {
+//            self.segmentMiniTopInset = kNavigationHeight / 2;
+//            self.headerHeight = kHeaderHeight;
+//        }
+//        else if ([self.view isViewOrientationPortrait]) {
+            self.segmentMiniTopInset = kNavigationHeight;
+            self.headerHeight = kHeaderHeight;
+//        }
         self.freezenHeaderWhenReachMaxHeaderheight = YES;
     }
     return self;
@@ -68,6 +75,26 @@ void *RoomHeaderInsetObserver = &RoomHeaderInsetObserver;
     [super viewWillDisappear:animated];
     [self.titleRoomHeaderView updateHeadPhotoWithTopInset:kNavigationHeight];
     [(MRNavigationControllerViewController *)self.navigationController updateWithTopInset:kNavigationHeight];
+}
+
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    
+    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        
+        
+    } completion:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        
+        if ([self.view isViewOrientationLandscape]) {
+            self.segmentMiniTopInset = kNavigationHeight / 2;
+            self.headerHeight = kHeaderHeight;
+        }
+        else if ([self.view isViewOrientationPortrait]) {
+            self.segmentMiniTopInset = kNavigationHeight;
+            self.headerHeight = kHeaderHeight;
+        }
+    }];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {

@@ -7,9 +7,9 @@
 //
 
 #import "MRTitleHistorySegmentViewController.h"
-#import "MRTitleTableViewController.h"
-#import "MRAwardTableViewController.h"
+#import "MRTitleHistoryCollectionViewController.h"
 #import "constants.h"
+#import "UIView+Orientation.h"
 
 @interface MRTitleHistorySegmentViewController ()
 
@@ -19,22 +19,46 @@
 
 - (instancetype)init {
     
-    MRTitleTableViewController *titleTableViewController = [[MRTitleTableViewController alloc] initWithNibName:NSStringFromClass([MRTitleTableViewController class]) bundle:nil];
-    MRAwardTableViewController *awardTableViewController = [[MRAwardTableViewController alloc] initWithNibName:NSStringFromClass([MRAwardTableViewController class]) bundle:nil];
-
-    self = [super initWithControllers:titleTableViewController, awardTableViewController, nil];
+    MRTitleHistoryCollectionViewController *titleHistoryCollectionViewController = [[MRTitleHistoryCollectionViewController alloc]initWithNibName:NSStringFromClass([MRTitleHistoryCollectionViewController class]) bundle:nil];
+    self = [super initWithControllers:titleHistoryCollectionViewController, nil];
     if (self) {
-        self.segmentMiniTopInset = kNavigationHeight;
-        self.headerHeight = kNavigationHeight;
+//        if ([self.view isViewOrientationLandscape]) {
+//            self.segmentMiniTopInset = kNavigationHeight / 2;
+//            self.headerHeight = kNavigationHeight / 2;
+//        }
+//        else if ([self.view isViewOrientationPortrait]) {
+            self.segmentMiniTopInset = kNavigationHeight;
+            self.headerHeight = kNavigationHeight;
+//        }
         self.freezenHeaderWhenReachMaxHeaderheight = YES;
     }
     return self;
 }
 
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    
+    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        
+        
+    } completion:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        
+        if ([self.view isViewOrientationLandscape]) {
+            self.segmentMiniTopInset = kNavigationHeight / 2;
+            self.headerHeight = kNavigationHeight / 2;
+        }
+        else if ([self.view isViewOrientationPortrait]) {
+            self.segmentMiniTopInset = kNavigationHeight;
+            self.headerHeight = kNavigationHeight / 2;
+        }
+    }];
+}
+
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    self.title = NSLocalizedString(@"Title History", @"Title History");
+    self.title = self.currentDisplayController.segmentTitle;
     // Do any additional setup after loading the view.
 }
 

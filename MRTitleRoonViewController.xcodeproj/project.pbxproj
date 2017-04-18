@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		98146C8E1EA4C914003E73CF /* MRSegmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98146C8D1EA4C914003E73CF /* MRSegmentView.xib */; };
+		98A78D5D1EA5BC97002DEC19 /* MRTitleHistoryCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A78D5B1EA5BC97002DEC19 /* MRTitleHistoryCollectionViewController.m */; };
+		98A78D5E1EA5BC97002DEC19 /* MRTitleHistoryCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98A78D5C1EA5BC97002DEC19 /* MRTitleHistoryCollectionViewController.xib */; };
+		98A78D621EA5BCF4002DEC19 /* MRTitleHistoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A78D601EA5BCF4002DEC19 /* MRTitleHistoryCollectionViewCell.m */; };
+		98A78D631EA5BCF4002DEC19 /* MRTitleHistoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98A78D611EA5BCF4002DEC19 /* MRTitleHistoryCollectionViewCell.xib */; };
+		98A78D671EA5C44B002DEC19 /* MRTitleHistoryCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A78D651EA5C44B002DEC19 /* MRTitleHistoryCollectionReusableView.m */; };
+		98A78D681EA5C44B002DEC19 /* MRTitleHistoryCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98A78D661EA5C44B002DEC19 /* MRTitleHistoryCollectionReusableView.xib */; };
+		98A78D6C1EA5E2E3002DEC19 /* UIView+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A78D6B1EA5E2E3002DEC19 /* UIView+Orientation.m */; };
+		98A78D711EA5E7AE002DEC19 /* MRTitleShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A78D6F1EA5E7AE002DEC19 /* MRTitleShareViewController.m */; };
+		98A78D721EA5E7AE002DEC19 /* MRTitleShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98A78D701EA5E7AE002DEC19 /* MRTitleShareViewController.xib */; };
 		98D4A7951EA4699A006DFC1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D4A7941EA4699A006DFC1A /* main.m */; };
 		98D4A7981EA4699A006DFC1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D4A7971EA4699A006DFC1A /* AppDelegate.m */; };
 		98D4A79B1EA4699A006DFC1A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D4A79A1EA4699A006DFC1A /* ViewController.m */; };
@@ -35,12 +44,7 @@
 		98D4A80F1EA49E64006DFC1A /* MRTitleRoomHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D4A80E1EA49E64006DFC1A /* MRTitleRoomHeader.m */; };
 		98D4A8111EA49E72006DFC1A /* MRTitleRoomHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98D4A8101EA49E72006DFC1A /* MRTitleRoomHeader.xib */; };
 		98D4A8191EA4B26D006DFC1A /* MRTitleHistorySegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D4A8181EA4B26D006DFC1A /* MRTitleHistorySegmentViewController.m */; };
-		98D4A8271EA4B330006DFC1A /* MRTitleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D4A8251EA4B330006DFC1A /* MRTitleTableViewController.m */; };
-		98D4A8281EA4B330006DFC1A /* MRTitleTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98D4A8261EA4B330006DFC1A /* MRTitleTableViewController.xib */; };
-		98D4A82C1EA4B33C006DFC1A /* MRAwardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D4A82A1EA4B33C006DFC1A /* MRAwardTableViewController.m */; };
-		98D4A82D1EA4B33C006DFC1A /* MRAwardTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98D4A82B1EA4B33C006DFC1A /* MRAwardTableViewController.xib */; };
-		98D4A8311EA4B635006DFC1A /* MRTitleHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D4A82F1EA4B635006DFC1A /* MRTitleHistoryTableViewCell.m */; };
-		98D4A8321EA4B635006DFC1A /* MRTitleHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98D4A8301EA4B635006DFC1A /* MRTitleHistoryTableViewCell.xib */; };
+		C02BF639487E1A02FAE96896 /* libPods-MRTitleRoonViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45993356D4CDDA397B1168D5 /* libPods-MRTitleRoonViewController.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +65,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45993356D4CDDA397B1168D5 /* libPods-MRTitleRoonViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MRTitleRoonViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98146C8D1EA4C914003E73CF /* MRSegmentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRSegmentView.xib; sourceTree = "<group>"; };
+		98A78D5A1EA5BC97002DEC19 /* MRTitleHistoryCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRTitleHistoryCollectionViewController.h; sourceTree = "<group>"; };
+		98A78D5B1EA5BC97002DEC19 /* MRTitleHistoryCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRTitleHistoryCollectionViewController.m; sourceTree = "<group>"; };
+		98A78D5C1EA5BC97002DEC19 /* MRTitleHistoryCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRTitleHistoryCollectionViewController.xib; sourceTree = "<group>"; };
+		98A78D5F1EA5BCF4002DEC19 /* MRTitleHistoryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRTitleHistoryCollectionViewCell.h; sourceTree = "<group>"; };
+		98A78D601EA5BCF4002DEC19 /* MRTitleHistoryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRTitleHistoryCollectionViewCell.m; sourceTree = "<group>"; };
+		98A78D611EA5BCF4002DEC19 /* MRTitleHistoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRTitleHistoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		98A78D641EA5C44B002DEC19 /* MRTitleHistoryCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRTitleHistoryCollectionReusableView.h; sourceTree = "<group>"; };
+		98A78D651EA5C44B002DEC19 /* MRTitleHistoryCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRTitleHistoryCollectionReusableView.m; sourceTree = "<group>"; };
+		98A78D661EA5C44B002DEC19 /* MRTitleHistoryCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRTitleHistoryCollectionReusableView.xib; sourceTree = "<group>"; };
+		98A78D6A1EA5E2E3002DEC19 /* UIView+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Orientation.h"; sourceTree = "<group>"; };
+		98A78D6B1EA5E2E3002DEC19 /* UIView+Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Orientation.m"; sourceTree = "<group>"; };
+		98A78D6E1EA5E7AE002DEC19 /* MRTitleShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRTitleShareViewController.h; sourceTree = "<group>"; };
+		98A78D6F1EA5E7AE002DEC19 /* MRTitleShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRTitleShareViewController.m; sourceTree = "<group>"; };
+		98A78D701EA5E7AE002DEC19 /* MRTitleShareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRTitleShareViewController.xib; sourceTree = "<group>"; };
 		98D4A7901EA4699A006DFC1A /* MRTitleRoonViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRTitleRoonViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D4A7941EA4699A006DFC1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98D4A7961EA4699A006DFC1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,15 +133,8 @@
 		98D4A8101EA49E72006DFC1A /* MRTitleRoomHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRTitleRoomHeader.xib; sourceTree = "<group>"; };
 		98D4A8171EA4B26D006DFC1A /* MRTitleHistorySegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRTitleHistorySegmentViewController.h; sourceTree = "<group>"; };
 		98D4A8181EA4B26D006DFC1A /* MRTitleHistorySegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRTitleHistorySegmentViewController.m; sourceTree = "<group>"; };
-		98D4A8241EA4B330006DFC1A /* MRTitleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRTitleTableViewController.h; sourceTree = "<group>"; };
-		98D4A8251EA4B330006DFC1A /* MRTitleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRTitleTableViewController.m; sourceTree = "<group>"; };
-		98D4A8261EA4B330006DFC1A /* MRTitleTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRTitleTableViewController.xib; sourceTree = "<group>"; };
-		98D4A8291EA4B33C006DFC1A /* MRAwardTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRAwardTableViewController.h; sourceTree = "<group>"; };
-		98D4A82A1EA4B33C006DFC1A /* MRAwardTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRAwardTableViewController.m; sourceTree = "<group>"; };
-		98D4A82B1EA4B33C006DFC1A /* MRAwardTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRAwardTableViewController.xib; sourceTree = "<group>"; };
-		98D4A82E1EA4B635006DFC1A /* MRTitleHistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRTitleHistoryTableViewCell.h; sourceTree = "<group>"; };
-		98D4A82F1EA4B635006DFC1A /* MRTitleHistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRTitleHistoryTableViewCell.m; sourceTree = "<group>"; };
-		98D4A8301EA4B635006DFC1A /* MRTitleHistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRTitleHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		DFA81CD13D3A1F51089B51A1 /* Pods-MRTitleRoonViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRTitleRoonViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MRTitleRoonViewController/Pods-MRTitleRoonViewController.debug.xcconfig"; sourceTree = "<group>"; };
+		E05F155AD77995D2DE73967E /* Pods-MRTitleRoonViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRTitleRoonViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-MRTitleRoonViewController/Pods-MRTitleRoonViewController.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C02BF639487E1A02FAE96896 /* libPods-MRTitleRoonViewController.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +163,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C837547CD23B5C6A72A35FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFA81CD13D3A1F51089B51A1 /* Pods-MRTitleRoonViewController.debug.xcconfig */,
+				E05F155AD77995D2DE73967E /* Pods-MRTitleRoonViewController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5E2427D10641D125C5954862 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45993356D4CDDA397B1168D5 /* libPods-MRTitleRoonViewController.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98A78D691EA5E2C4002DEC19 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				98A78D6A1EA5E2E3002DEC19 /* UIView+Orientation.h */,
+				98A78D6B1EA5E2E3002DEC19 /* UIView+Orientation.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		98A78D6D1EA5E797002DEC19 /* MRTitleShareViewController */ = {
+			isa = PBXGroup;
+			children = (
+				98A78D6E1EA5E7AE002DEC19 /* MRTitleShareViewController.h */,
+				98A78D6F1EA5E7AE002DEC19 /* MRTitleShareViewController.m */,
+				98A78D701EA5E7AE002DEC19 /* MRTitleShareViewController.xib */,
+			);
+			path = MRTitleShareViewController;
+			sourceTree = "<group>";
+		};
 		98D4A7871EA4699A006DFC1A = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +206,8 @@
 				98D4A7AC1EA4699A006DFC1A /* MRTitleRoonViewControllerTests */,
 				98D4A7B71EA4699A006DFC1A /* MRTitleRoonViewControllerUITests */,
 				98D4A7911EA4699A006DFC1A /* Products */,
+				1C837547CD23B5C6A72A35FD /* Pods */,
+				5E2427D10641D125C5954862 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,6 +224,7 @@
 		98D4A7921EA4699A006DFC1A /* MRTitleRoonViewController */ = {
 			isa = PBXGroup;
 			children = (
+				98A78D691EA5E2C4002DEC19 /* Category */,
 				98D4A7C61EA46A05006DFC1A /* GLWaveView */,
 				98D4A7CB1EA46A05006DFC1A /* MRNavigationController */,
 				98D4A7CE1EA46A05006DFC1A /* MRSegmentController */,
@@ -182,6 +234,7 @@
 				98D4A7D81EA46A05006DFC1A /* MRSegmentView */,
 				98D4A7DB1EA46A05006DFC1A /* UIColor+CrossFade */,
 				98D4A7E51EA46A7A006DFC1A /* MRTitleRoomViewController */,
+				98A78D6D1EA5E797002DEC19 /* MRTitleShareViewController */,
 				98D4A7961EA4699A006DFC1A /* AppDelegate.h */,
 				98D4A7971EA4699A006DFC1A /* AppDelegate.m */,
 				98D4A7991EA4699A006DFC1A /* ViewController.h */,
@@ -305,15 +358,15 @@
 				98D4A80D1EA49E64006DFC1A /* MRTitleRoomHeader.h */,
 				98D4A80E1EA49E64006DFC1A /* MRTitleRoomHeader.m */,
 				98D4A8101EA49E72006DFC1A /* MRTitleRoomHeader.xib */,
-				98D4A8241EA4B330006DFC1A /* MRTitleTableViewController.h */,
-				98D4A8251EA4B330006DFC1A /* MRTitleTableViewController.m */,
-				98D4A8261EA4B330006DFC1A /* MRTitleTableViewController.xib */,
-				98D4A8291EA4B33C006DFC1A /* MRAwardTableViewController.h */,
-				98D4A82A1EA4B33C006DFC1A /* MRAwardTableViewController.m */,
-				98D4A82B1EA4B33C006DFC1A /* MRAwardTableViewController.xib */,
-				98D4A82E1EA4B635006DFC1A /* MRTitleHistoryTableViewCell.h */,
-				98D4A82F1EA4B635006DFC1A /* MRTitleHistoryTableViewCell.m */,
-				98D4A8301EA4B635006DFC1A /* MRTitleHistoryTableViewCell.xib */,
+				98A78D5A1EA5BC97002DEC19 /* MRTitleHistoryCollectionViewController.h */,
+				98A78D5B1EA5BC97002DEC19 /* MRTitleHistoryCollectionViewController.m */,
+				98A78D5C1EA5BC97002DEC19 /* MRTitleHistoryCollectionViewController.xib */,
+				98A78D5F1EA5BCF4002DEC19 /* MRTitleHistoryCollectionViewCell.h */,
+				98A78D601EA5BCF4002DEC19 /* MRTitleHistoryCollectionViewCell.m */,
+				98A78D611EA5BCF4002DEC19 /* MRTitleHistoryCollectionViewCell.xib */,
+				98A78D641EA5C44B002DEC19 /* MRTitleHistoryCollectionReusableView.h */,
+				98A78D651EA5C44B002DEC19 /* MRTitleHistoryCollectionReusableView.m */,
+				98A78D661EA5C44B002DEC19 /* MRTitleHistoryCollectionReusableView.xib */,
 				98D4A8081EA47777006DFC1A /* MRTitleRoomCollectionViewController.h */,
 				98D4A8091EA47777006DFC1A /* MRTitleRoomCollectionViewController.m */,
 				98D4A80A1EA47777006DFC1A /* MRTitleRoomCollectionViewController.xib */,
@@ -337,9 +390,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98D4A7BD1EA4699A006DFC1A /* Build configuration list for PBXNativeTarget "MRTitleRoonViewController" */;
 			buildPhases = (
+				79EDCE9FF1400703B68B9DB6 /* [CP] Check Pods Manifest.lock */,
 				98D4A78C1EA4699A006DFC1A /* Sources */,
 				98D4A78D1EA4699A006DFC1A /* Frameworks */,
 				98D4A78E1EA4699A006DFC1A /* Resources */,
+				C54DE0D02155A9D115D80863 /* [CP] Embed Pods Frameworks */,
+				9F64DA44DB17CFE91626FA4B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -397,7 +453,7 @@
 				TargetAttributes = {
 					98D4A78F1EA4699A006DFC1A = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 6FE3NQT9SX;
+						DevelopmentTeam = U38Y2DJR8S;
 						ProvisioningStyle = Automatic;
 					};
 					98D4A7A81EA4699A006DFC1A = {
@@ -441,14 +497,15 @@
 			files = (
 				98D4A7A31EA4699A006DFC1A /* LaunchScreen.storyboard in Resources */,
 				98D4A7FD1EA46A7A006DFC1A /* MRTitleRoomCollectionViewCell.xib in Resources */,
-				98D4A82D1EA4B33C006DFC1A /* MRAwardTableViewController.xib in Resources */,
-				98D4A8281EA4B330006DFC1A /* MRTitleTableViewController.xib in Resources */,
+				98A78D681EA5C44B002DEC19 /* MRTitleHistoryCollectionReusableView.xib in Resources */,
+				98A78D631EA5BCF4002DEC19 /* MRTitleHistoryCollectionViewCell.xib in Resources */,
+				98A78D721EA5E7AE002DEC19 /* MRTitleShareViewController.xib in Resources */,
 				98D4A7FB1EA46A7A006DFC1A /* MRTitleCollectionViewCell.xib in Resources */,
 				98D4A7A01EA4699A006DFC1A /* Assets.xcassets in Resources */,
 				98D4A8111EA49E72006DFC1A /* MRTitleRoomHeader.xib in Resources */,
 				98D4A79E1EA4699A006DFC1A /* Main.storyboard in Resources */,
-				98D4A8321EA4B635006DFC1A /* MRTitleHistoryTableViewCell.xib in Resources */,
 				98D4A7F91EA46A7A006DFC1A /* MRTitleBottomButtonCollectionViewCell.xib in Resources */,
+				98A78D5E1EA5BC97002DEC19 /* MRTitleHistoryCollectionViewController.xib in Resources */,
 				98D4A80C1EA47777006DFC1A /* MRTitleRoomCollectionViewController.xib in Resources */,
 				98146C8E1EA4C914003E73CF /* MRSegmentView.xib in Resources */,
 			);
@@ -470,27 +527,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		79EDCE9FF1400703B68B9DB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F64DA44DB17CFE91626FA4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MRTitleRoonViewController/Pods-MRTitleRoonViewController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C54DE0D02155A9D115D80863 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MRTitleRoonViewController/Pods-MRTitleRoonViewController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		98D4A78C1EA4699A006DFC1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				98D4A7E11EA46A05006DFC1A /* MRSegmentController.m in Sources */,
+				98A78D621EA5BCF4002DEC19 /* MRTitleHistoryCollectionViewCell.m in Sources */,
 				98D4A79B1EA4699A006DFC1A /* ViewController.m in Sources */,
-				98D4A8311EA4B635006DFC1A /* MRTitleHistoryTableViewCell.m in Sources */,
 				98D4A80F1EA49E64006DFC1A /* MRTitleRoomHeader.m in Sources */,
+				98A78D5D1EA5BC97002DEC19 /* MRTitleHistoryCollectionViewController.m in Sources */,
 				98D4A7FC1EA46A7A006DFC1A /* MRTitleRoomCollectionViewCell.m in Sources */,
+				98A78D671EA5C44B002DEC19 /* MRTitleHistoryCollectionReusableView.m in Sources */,
 				98D4A7DE1EA46A05006DFC1A /* GLWave.m in Sources */,
 				98D4A7F81EA46A7A006DFC1A /* MRTitleBottomButtonCollectionViewCell.m in Sources */,
 				98D4A8061EA46AA9006DFC1A /* MRTitleRoomHeaderViewController.m in Sources */,
-				98D4A82C1EA4B33C006DFC1A /* MRAwardTableViewController.m in Sources */,
 				98D4A7981EA4699A006DFC1A /* AppDelegate.m in Sources */,
 				98D4A8191EA4B26D006DFC1A /* MRTitleHistorySegmentViewController.m in Sources */,
+				98A78D711EA5E7AE002DEC19 /* MRTitleShareViewController.m in Sources */,
 				98D4A7E41EA46A05006DFC1A /* UIColor+CrossFade.m in Sources */,
 				98D4A7FA1EA46A7A006DFC1A /* MRTitleCollectionViewCell.m in Sources */,
 				98D4A7DF1EA46A05006DFC1A /* GLWaveView.m in Sources */,
+				98A78D6C1EA5E2E3002DEC19 /* UIView+Orientation.m in Sources */,
 				98D4A7E31EA46A05006DFC1A /* MRSegmentView.m in Sources */,
-				98D4A8271EA4B330006DFC1A /* MRTitleTableViewController.m in Sources */,
 				98D4A80B1EA47777006DFC1A /* MRTitleRoomCollectionViewController.m in Sources */,
 				98D4A7951EA4699A006DFC1A /* main.m in Sources */,
 				98D4A7E21EA46A05006DFC1A /* MRSegmentHeaderView.m in Sources */,
@@ -643,10 +750,12 @@
 		};
 		98D4A7BE1EA4699A006DFC1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFA81CD13D3A1F51089B51A1 /* Pods-MRTitleRoonViewController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6FE3NQT9SX;
+				DEVELOPMENT_TEAM = U38Y2DJR8S;
 				INFOPLIST_FILE = MRTitleRoonViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mozatloops.MRTitleRoonViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -655,10 +764,12 @@
 		};
 		98D4A7BF1EA4699A006DFC1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E05F155AD77995D2DE73967E /* Pods-MRTitleRoonViewController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6FE3NQT9SX;
+				DEVELOPMENT_TEAM = U38Y2DJR8S;
 				INFOPLIST_FILE = MRTitleRoonViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mozatloops.MRTitleRoonViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";

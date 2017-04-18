@@ -63,14 +63,30 @@
                                     <action selector="pushToAwards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gAF-HB-ufb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pT-mI-DMY">
+                                <rect key="frame" x="112" y="361" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.92469811440000005" green="0.17064267399999999" blue="0.4794982076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JeL-KW-dqu"/>
+                                    <constraint firstAttribute="width" constant="150" id="ngX-Qf-QWM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Share Title"/>
+                                <connections>
+                                    <action selector="shareTitle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cjz-uX-kRT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="3pT-mI-DMY" firstAttribute="centerX" secondItem="zhi-wf-ngh" secondAttribute="centerX" id="13p-CZ-M9m"/>
                             <constraint firstItem="zhi-wf-ngh" firstAttribute="top" secondItem="45y-fd-mDl" secondAttribute="bottom" constant="8.5" id="4w1-TX-zvL"/>
                             <constraint firstItem="zhi-wf-ngh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EY7-sL-sd1"/>
                             <constraint firstItem="KTZ-uR-Qgs" firstAttribute="centerX" secondItem="45y-fd-mDl" secondAttribute="centerX" id="JPU-KF-Uqr"/>
                             <constraint firstItem="45y-fd-mDl" firstAttribute="centerX" secondItem="zhi-wf-ngh" secondAttribute="centerX" id="a0r-Gd-QaO"/>
                             <constraint firstItem="zhi-wf-ngh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cXl-xa-s62"/>
+                            <constraint firstItem="3pT-mI-DMY" firstAttribute="top" secondItem="zhi-wf-ngh" secondAttribute="bottom" constant="7.5" id="jlO-l7-ZiL"/>
                             <constraint firstItem="45y-fd-mDl" firstAttribute="top" secondItem="KTZ-uR-Qgs" secondAttribute="bottom" constant="8" id="lCv-3H-1Fd"/>
                         </constraints>
                     </view>

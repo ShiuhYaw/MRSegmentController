@@ -37,6 +37,24 @@
     self.cellPadding = (screen - self.cellWidth * 2 - 3)/3.0;
 }
 
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    
+    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        
+
+    } completion:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        
+        CGFloat screen = [UIScreen mainScreen].bounds.size.width;
+        self.sRate = screen / 375.0 ;
+        self.cellWidth = 150 * self.sRate;
+        self.cellHight = 120 * self.sRate;
+        self.cellPadding = (screen - self.cellWidth * 2 - 3)/3.0;
+        [self.collectionView reloadData];
+    }];
+}
+
 - (void)didReceiveMemoryWarning {
     
     [super didReceiveMemoryWarning];
@@ -192,7 +210,7 @@
             return UIEdgeInsetsMake(0, self.cellPadding, 0, self.cellPadding);
             break;
         case 1:
-            return UIEdgeInsetsMake(self.cellPadding, self.cellPadding, 0, self.cellPadding);
+            return UIEdgeInsetsMake(self.cellPadding/2, self.cellPadding, self.cellPadding/2, self.cellPadding);
             break;
         case 2:
             return UIEdgeInsetsMake(0, self.cellPadding, 0, self.cellPadding);

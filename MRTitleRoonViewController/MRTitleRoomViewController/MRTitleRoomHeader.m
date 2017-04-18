@@ -25,6 +25,7 @@
 @property (nonatomic, strong) GLWave *waveA;
 @property (nonatomic, strong) GLWave *waveB;
 @property (nonatomic, strong) GLWave *waveC;
+@property (nonatomic, strong) GLWaveView *glWaveView;
 
 @end
 
@@ -42,12 +43,14 @@
 - (void)awakeFromNib {
     
     [super awakeFromNib];
-    GLWaveView *view = [[GLWaveView alloc] initWithFrame:self.waveView.bounds];
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    CGRect bounds = CGRectMake(0, 0, width, 91);
+    self.glWaveView = [[GLWaveView alloc] initWithFrame:bounds];
     self.waveA = [GLWave defaultWave];
     self.waveA.offsetX = kWaveOffsetX;
     self.waveA.offsetY = kRatioConstant / 3;
     self.waveA.height  = kWaveHeight;
-    self.waveA.width   = self.bounds.size.width;
+    self.waveA.width   = width;
     self.waveA.speedX  = kWaveSpeed1;
     self.waveA.fillColor = [UIColor colorWithWhite:1 alpha:0.250].CGColor;
     
@@ -55,7 +58,7 @@
     self.waveB.offsetX = kWaveOffsetX;
     self.waveB.offsetY = kRatioConstant / 3 * 2;
     self.waveB.height  = kWaveHeight;
-    self.waveB.width   = self.bounds.size.width;
+    self.waveB.width   = width;
     self.waveB.speedX  = kWaveSpeed2;
     self.waveB.fillColor = [UIColor colorWithWhite:1 alpha:0.250].CGColor;
     
@@ -63,16 +66,16 @@
     self.waveC.offsetX = kWaveOffsetX;
     self.waveC.offsetY = kRatioConstant;
     self.waveC.height  = kWaveHeight;
-    self.waveC.width   = self.bounds.size.width;
+    self.waveC.width   = width;
     self.waveC.speedX  = kWaveSpeed3;
     self.waveC.fillColor = [UIColor colorWithWhite:1 alpha:0.250].CGColor;
     
-    [view addWave:self.waveA];
-    [view addWave:self.waveB];
-    [view addWave:self.waveC];
-    
-    [self.waveView addSubview:view];
-    [view startWaveAnimate];
+    [self.glWaveView addWave:self.waveA];
+    [self.glWaveView addWave:self.waveB];
+    [self.glWaveView addWave:self.waveC];
+
+    [self.waveView addSubview:self.glWaveView];
+    [self.glWaveView startWaveAnimate];
     self.ratioProfileImageHeight = self.heightConstraint.constant / 1.7f;
 }
 
@@ -85,6 +88,11 @@
     self.waveA.width   = self.bounds.size.width;
     self.waveB.width   = self.bounds.size.width;
     self.waveC.width   = self.bounds.size.width;
+    if (self.glWaveView) {
+        CGFloat width = [UIScreen mainScreen].bounds.size.width;
+        CGRect bounds = CGRectMake(0, 0, width, 91);
+        self.glWaveView.frame = bounds;
+    }
 }
 
 - (UIImageView *)backgroundImageView {

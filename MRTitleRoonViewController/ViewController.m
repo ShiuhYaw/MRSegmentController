@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "MRTitleRoomViewController/MRTitleRoomHeaderViewController.h"
 #import "MRTitleRoomViewController/MRTitleHistorySegmentViewController.h"
+#import "MRTitleShareViewController/MRTitleShareViewController.h"
 
 @interface ViewController ()
 
@@ -43,6 +44,14 @@
     
     MRTitleHistorySegmentViewController *titleHistorySegmentViewController = [[MRTitleHistorySegmentViewController alloc]init];
     [self.navigationController pushViewController:titleHistorySegmentViewController animated:YES];
+}
+
+- (IBAction)shareTitle:(UIButton *)sender {
+    
+    MRTitleShareViewController *titleShareViewController = [[MRTitleShareViewController alloc]initWithNibName:@"MRTitleShareViewController" bundle:nil];
+    titleShareViewController.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    titleShareViewController.view.backgroundColor = [UIColor clearColor];
+    [self presentViewController:titleShareViewController animated:NO completion:nil];
 }
 
 @end
